@@ -9,7 +9,7 @@ export const returnPromise = wordSearch => {
     safesearch: true,
   });
 
-  return fetch(`${BASE_URL}?${searchParams}`).then(response => {
+  return fetch(`${BASE_URL}?${searchParams.toString()}`).then(response => {
     if (!response.ok) {
       throw new Error();
     }
