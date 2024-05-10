@@ -5,7 +5,6 @@ export const returnPromise = wordSearch => {
   const searchParams = new URLSearchParams({
     key: API_KEY,
     q: wordSearch,
-    image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
   });
